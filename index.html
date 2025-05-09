@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面部追踪</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- p5.js库 - 使用最新稳定版本 -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    
+    <!-- ml5.js库 - 使用最新稳定版本 -->
+    <script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js"></script>
+    
+    <!-- 确保在库加载后再加载自己的脚本 -->
+    <script>
+        // 等待页面完全加载后再执行
+        window.onload = function() {
+            console.log("Window loaded");
+            console.log("P5 available:", typeof p5 !== 'undefined');
+            console.log("ML5 available:", typeof ml5 !== 'undefined');
+        }
+    </script>
+    
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Canvas will be created here by p5.js -->
+    </main>
+</body>
+</html> 
